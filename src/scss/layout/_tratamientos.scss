@@ -1,0 +1,156 @@
+.contenedor-servicios {
+    background-color: $white;
+    padding-top: 3rem;
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+        .servicios {
+            @include grid(3, 2rem); 
+            padding: 4rem;
+            display: flex;
+            flex-wrap: wrap; // flex-wrap para manejar el ajuste de contenido
+            justify-content: space-between; // Espaciado uniforme entre elementos
+
+            @include tablet {
+                flex-direction: column; // Cambia la dirección a columna en tabletas y dispositivos más pequeños
+            }
+
+            .boton { 
+                display: flex; 
+                margin-top: 2rem;
+                flex-direction: column;  
+                justify-content: center;  
+                align-items: center;
+                padding: 1.5rem;
+                width: auto;
+                border-radius: 5rem;
+                background-color: $cyan;
+                height: 4rem;
+                transition: all .7s;
+                box-shadow: 0 5px 10px #00000053; 
+        
+               a {
+                color: $white;
+                line-height: 1.5;  // Ajusta la altura de línea según sea necesario
+               }
+        
+               &:hover {
+                padding-left: 2rem;
+                background-color: $gray;
+               }
+        
+            }    
+        }
+
+        .servicios-unidad {
+            width: 30%; // Asegúrate de que la suma del ancho y del margen no exceda el 100%
+            height: auto;
+            background: $white;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            padding: 45px 30px 60px 30px;
+            transition: all .5s;
+            padding-bottom: 2.3rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);    
+
+            i {
+                font-size: 3rem;
+                color: #fff;
+                background: $cyan;
+                display: inline-block;
+                width: 7rem;
+                height: 7rem;
+                text-align: center;
+                padding-top: 2.3rem;
+                border-radius: 50%;
+                box-shadow: 0 3px 12px #5e5ecd58;
+            }
+
+            h3 {
+                font-size: 2.3rem;
+                padding-top: 3rem;
+                color: $cyan;
+                text-align: center;
+                margin: 0;
+            }
+        
+            p {
+                color: rgba(0, 0, 0, 0.69);
+                font-size: 1.5rem;
+                padding-top: 1.5rem;
+                padding-bottom: 3rem;
+                text-align: center;
+            }
+
+            a {
+                display: block;  // Hace que el enlace sea un bloque, ocupando el ancho del contenedor
+                text-align: center;  // Centra el texto del enlace
+                color: $cyan;  // Cambia el color del texto a verde (puedes ajustar el código de color según tus preferencias)
+                text-decoration: none;  // Elimina la decoración de subrayado, si no lo deseas
+                padding: 1rem;  // Añade espacio alrededor del texto del enlace, ajusta según sea necesario
+                padding-bottom: 1rem;
+                transition: all .7s;
+            }
+
+            a:hover {
+                opacity: 0.5;
+            }
+            
+
+            @include tablet {
+             width: 100%;
+                
+        }
+
+    }
+
+}
+    
+
+.contenedor-publicitario {
+    background-image: url(../../build/img/NHS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .publicitario {
+        width: 50rem;
+        background-color: rgba(46, 16, 75, 0.474);
+        
+        h3 {
+            padding-top: 3rem;
+            color: $white;
+            text-align: center;
+            padding: 3rem;
+            margin: 0;
+            padding-bottom: 1rem;
+            text-shadow: 0 5px 8px rgba(0, 0, 0, 0.219);
+        }
+    
+        p {
+            color: $white;
+            font-size: 1.6rem;
+            padding: 3rem;
+            padding-bottom: 3rem;
+            text-align: center;
+            text-shadow: 0 5px 8px rgba(0, 0, 0, 0.219);
+        }
+
+        @include tablet {
+            width: 100%;
+            padding: 3rem;
+        }
+
+    }
+
+}
+
+

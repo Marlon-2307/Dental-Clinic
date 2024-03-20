@@ -1,0 +1,48 @@
+.slider {
+    overflow: hidden;
+    width: 100%;
+  
+    .img-slider {
+      display: flex;
+      transition: transform 0.5s ease;
+  
+      img {
+        width: 100%;
+        height: 60rem;
+        flex: 0 0 auto;
+        transition: transform 0.5s ease;
+      }
+
+      @include tablet {
+        height: auto;
+      }
+
+      @include telefono {
+        height: auto;
+      }
+    }
+  
+    .prev-button, .next-button {
+      position: absolute;
+      top: auto;
+      transform: translateY(-50%);
+      background: $cyan;
+      border: none;
+      cursor: pointer;
+      padding: 1rem;
+      z-index: 0;
+    }
+
+    button {
+        color: $white;
+    }
+  
+    .prev-button {
+      left: 1rem;
+    }
+  
+    .next-button {
+      right: 1rem;
+    }
+
+  }

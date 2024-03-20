@@ -1,0 +1,156 @@
+.contenedor-formulario {
+    width: auto;
+    margin: auto;
+    padding: auto;
+
+        @include grid(2, 4rem);
+          padding: 5rem;
+    
+        @include tablet {
+          grid-template-columns: auto;
+  }
+
+    img{
+      border-radius: 0.1rem;
+    }
+
+    h3 {
+      padding: 1rem;
+      color: rgba(0, 0, 0, 0.69);
+    }
+
+
+
+    .formulario {
+        background-color: rgb(255, 255, 255); 
+        border-radius: 0.2rem;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        flex: 1;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.115);
+        
+
+        input, textarea {
+            margin-top: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.396);
+            width: 70%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid $gray;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            resize: none;
+          }
+
+          input::placeholder {
+            color: rgb(0, 0, 0);
+          }
+          
+          input[type="submit"] {
+            background-color: $cyan;
+            text-transform: uppercase;
+            color: white;
+            border-radius: 5rem;
+            cursor: pointer;
+            border: none;
+            transition: all .7s;
+            box-shadow: 0 5px 10px #00000053;
+          }
+
+          input[type="submit"]:hover {
+            background-color: $gray;
+           }
+
+           @include tablet {
+            width: 100%;
+          }
+      
+
+    }
+
+}
+
+.contactar {
+         @include grid (2, 2rem);
+         grid-template-columns: auto;
+            
+            .contactar-img {
+              background-image: url(../../build/img/attractive2.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+              cursor: pointer;
+            }
+
+            .contactar-imagen {
+              background-image: url(../../build/img/ortodoncia2.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+              cursor: pointer;
+            }
+
+
+            p {
+              background-color: $white;
+              border-radius: 0.2rem;
+              font-size: 1.6rem;
+              font-weight: 500;
+              padding: 3rem;
+              text-align: left;
+              position: absolute;
+              top: 30%;
+              left: 30%;
+              transform: translate(-50%);
+              color: $gray-dark;
+              width: auto; // Ajusta según tus necesidades
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.104);
+              cursor: pointer;
+          }
+      
+            /* h4 {
+              font-size: 2.5rem;
+              padding: 5rem;
+              font-weight: $regular;
+              text-align: left;
+              position: absolute;
+              top: 10%;
+              left: 30%;
+              transform: translate(-50%);
+              color: $gray-dark;
+              width: auto; // Ajusta según tus necesidades
+              cursor: pointer;
+          } */
+
+          button {
+              border: none;
+              background-color: $cyan;
+              font-size: 1.5rem;
+              padding: 0.7rem;
+              text-transform: uppercase;
+              font-weight: $regular;
+              text-align: left;
+              position: absolute;
+              top: 65%;
+              left: 14%;
+              transform: translate(-50%);
+              color: $white;
+              width: auto; // Ajusta según tus necesidades
+              transition: all .7s;
+              cursor: pointer;
+         }
+
+          @include tablet {
+              display: none;
+        }
+           
+}
+
+        
+        
+
+    

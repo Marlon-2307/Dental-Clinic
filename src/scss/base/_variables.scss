@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+// Fuentes
+$fuente_principal: 'Lato', sans-serif;
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 935px;
+$desktop: 1024px;
+
+// Colores
+$black: #000000;
+$blue: #3a7dc4;
+$indigo: #26035e;
+$purple: #8972b5;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #3ec05c;
+$teal: #2c2a2a;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #a5a7a9;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #b5cdd2;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #56595b;
+$breakpoint-xs: 0;
+$breakpoint-sm: 45rem;
+$breakpoint-md: 65rem;
+$breakpoint-xl: 100rem;
+$principal: 'Mooli', sans-serif;
+$parrafos: 'Lato', sans-serif;
+
+// Separacion
+$separacion: 5rem;
+
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$gruesa: 700;
+$sGruesa: 900
